@@ -3,7 +3,8 @@ asr            = 'simple'
 flfrc          = 'gr.fc'
 flfrq          = 'gr.freq'
 flvec          = 'gr.modes'
-la2F           = .true.
+la2F           = .true.     	#included in INPUT to obtain electorn phonon coupling along lines 
+				#between high symmetry points in brillouin zone
 q_in_band_form = .true.
 /
 4

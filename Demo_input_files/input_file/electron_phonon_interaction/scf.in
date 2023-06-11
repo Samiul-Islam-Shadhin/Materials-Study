@@ -1,3 +1,5 @@
+#this is used for the phonon calculation
+
 &CONTROL
 calculation     = 'scf'
 pseudo_dir      = '../pseudo/'

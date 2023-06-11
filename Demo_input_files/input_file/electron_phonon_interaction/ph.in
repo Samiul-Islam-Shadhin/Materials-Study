@@ -8,8 +8,8 @@ nq1             = 6
 nq2             = 6 
 nq3             = 1
 fildyn          = 'gr.dyn'
-fildvscf        = 'grdv'
-electron_phonon = 'interpolated'
-el_ph_nsigma    = 10
-el_ph_sigma     = 0.02
+fildvscf        = 'grdv'			#file name of derivative of the self consistent potential 
+electron_phonon = 'interpolated'		#electorn-phonon calc is performed
+el_ph_nsigma    = 10				#Gaussian broadening values, which is used for delta functions
+el_ph_sigma     = 0.02				#spacing between the gaussian broadnening values
 /
