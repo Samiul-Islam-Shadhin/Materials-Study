@@ -1,0 +1,16 @@
+Lattice parameters (cif):
+	1. https://materialsproject.org/materials
+	2. http://aflowlib.org/search/
+
+
+Pseudo_Potentials:
+	1. http://pseudopotentials.quantum-espresso.org/legacy_tables
+	2. https://www.materialscloud.org/discover/sssp/table/efficiency
+
+
+Quantum_Espresso input generator:
+	1. https://www.materialscloud.org/work/tools/qeinputgenerator
+	
+	
+Interactive Phonon visualizer:
+	1. https://interactivephonon.materialscloud.io/
