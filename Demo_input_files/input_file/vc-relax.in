@@ -1,0 +1,47 @@
+#calculates the optimized unit cell (optimizes lattice vector)
+
+
+
+
+&CONTROL
+calculation   = 'vc-relax'					# determines that the calc is unit cell relaxation
+pseudo_dir    = '../pseudo/'
+outdir        = '../tmp/'
+prefix        = 'gr'  
+etot_conv_thr = 1.0D-5
+forc_conv_thr = 1.0D-4 
+/                            
+&SYSTEM
+ibrav         = 4
+a             = 2.5
+c             = 15.0						#as we are doing 2D calc.o reduce the absolute value of the
+								#pressure in the z direction, the lattice constant in the z direction
+								#should be large enough.
+nat           = 2
+ntyp          = 1
+occupations   = 'smearing'
+smearing      = 'mv'
+degauss       = 0.02
+ecutwfc       = 60
+!assume_isolated = '2D'
+/
+&ELECTRONS
+mixing_beta   = 0.7
+conv_thr      = 1.0D-9
+/
+&IONS								#must included spec.
+ion_dynamics  = 'bfgs'
+/
+&CELL								#must be specified for unit cell relaxation calculation
+cell_dynamics = 'bfgs'
+press_conv_thr= 0.05						# convergence threshold (based on pressure)
+cell_dofree   = '2Dxy'						#specifies which cell parameter to change. 2Dxy is only x and y 
+								#components are allowed to change
+/
+ATOMIC_SPECIES
+C 12.0107 C.pbe-n-rrkjus_psl.0.1.UPF
+ATOMIC_POSITIONS (crystal)
+C  0.333333333  0.666666666  0.500000000
+C  0.666666666  0.333333333  0.500000000  
+K_POINTS (automatic)
+12 12 1 0 0 0

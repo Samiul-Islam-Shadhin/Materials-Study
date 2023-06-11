@@ -1,0 +1,10 @@
+first----
+	Do scf calculation
+2-----
+	do n-scf calulation to obtain band structure
+3-----
+	Extract the energies from the non‐SCF calculation and convert it
+	to a dataset we can plot with Gnuplot or Python
+	if we want to do this manually(other than run.sh) in terminal
+	we have to use band.x(given in photo) 
+	

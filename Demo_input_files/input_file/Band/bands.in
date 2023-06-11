@@ -1,0 +1,5 @@
+&BANDS
+ outdir  = '../tmp/'     #outdir must be same as scf.in path
+ prefix  = 'gr'			#prefix must be same as pw.x calc.
+ filband = 'gr.bands'
+/
