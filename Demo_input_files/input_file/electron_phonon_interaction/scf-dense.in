@@ -1,3 +1,6 @@
+#this one is used for electron phonon interaction calculation
+
+
 &CONTROL
 calculation     = 'scf'
 pseudo_dir      = '../pseudo/'
@@ -15,7 +18,7 @@ smearing        = 'mv'
 degauss         = 0.020
 ecutwfc         = 80
 assume_isolated = '2D'
-la2F            = .true.
+la2F            = .true.           #instructs pw.x to save eigenvalues on dense K-ponts grid to a file gr.a2Fsave
 /
 &ELECTRONS
 mixing_beta     = 0.7
